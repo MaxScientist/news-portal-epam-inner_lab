@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import NewsDataService from "../services/news.service";
-import Alert from "./Alert";
 
 export default class AddNews extends Component {
     constructor(props) {
@@ -131,22 +130,22 @@ export default class AddNews extends Component {
 
                         <div>
                             <label htmlFor="language">Language</label>
-                            <select name="language" id="language" value={this.state.language}
-                            onChange={this.onChangeLanguage}>
-                                <option value={this.state.language}  id="language"
-                                        onChange={this.onChangeLanguage} name="language">en</option>
-                                <option value={this.state.language} id="language"
-                                        onChange={this.onChangeLanguage} name="language">ru</option>
-                            </select>
-                            {/*<textarea rows="1"*/}
-                            {/*  type="text"*/}
-                            {/*  className="form-control"*/}
-                            {/*  id="language"*/}
-                            {/*  required*/}
-                            {/*  value={this.state.language}*/}
-                            {/*  onChange={this.onChangeLanguage}*/}
-                            {/*  name="language"*/}
-                            {/*/>*/}
+                            {/*<select name="language" id="language" value={this.state.language}*/}
+                            {/*onChange={this.onChangeLanguage}>*/}
+                            {/*    <option value={this.state.language}  id="language"*/}
+                            {/*            onChange={this.onChangeLanguage} name="language">en</option>*/}
+                            {/*    <option value={this.state.language} id="language"*/}
+                            {/*            onChange={this.onChangeLanguage} name="language">ru</option>*/}
+                            {/*</select>*/}
+                            <textarea rows="1"
+                              type="text"
+                              className="form-control"
+                              id="language"
+                              required
+                              value={this.state.language}
+                              onChange={this.onChangeLanguage}
+                              name="language"
+                            />
                         </div>
 
                         <div>
